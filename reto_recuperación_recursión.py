@@ -17,7 +17,7 @@ def combinacionesPosibles(c):
     return [[]]
   else:
     temp = combinacionesPosibles(c[:-1])
-    return temp + [lc + [c[-1]] for lc in temp] 
+    return temp + [p + [c[-1]] for p in temp] 
 
 a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 get_sum(a, 10)
